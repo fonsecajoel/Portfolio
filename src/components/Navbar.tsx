@@ -6,12 +6,12 @@ import { DownloadIcon, MoonIcon, SunIcon } from "./icons";
 import { useTheme } from "../hooks";
 
 const LINKS = [
-  { id: "inicio", label: "Início" },
-  { id: "sobre", label: "Sobre" },
-  { id: "competencias", label: "Competências" },
-  { id: "experiencia", label: "Experiência" },
-  { id: "projetos", label: "Projetos" },
-  { id: "contacto", label: "Contacto" },
+  { id: "inicio", label: "Home" },
+  { id: "sobre", label: "About" },
+  { id: "competencias", label: "Skills" },
+  { id: "experiencia", label: "Experience" },
+  { id: "projetos", label: "Projects" },
+  { id: "contacto", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -59,7 +59,7 @@ export default function Navbar() {
               e.preventDefault();
               go("inicio");
             }}
-            aria-label="Joel Fonseca — Início"
+            aria-label="Joel Fonseca — Home"
           >
             <span className="brand-mark">JF</span>
             <span className="brand-text">
@@ -67,7 +67,7 @@ export default function Navbar() {
             </span>
           </a>
 
-          <nav className="nav" aria-label="Navegação principal">
+          <nav className="nav" aria-label="Main navigation">
             {LINKS.map((l) => (
               <button
                 key={l.id}
@@ -91,7 +91,7 @@ export default function Navbar() {
             <button
               className="icon-btn"
               onClick={toggle}
-              aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}
+              aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
             >
               {theme === "dark" ? <SunIcon size={19} /> : <MoonIcon size={19} />}
             </button>
@@ -99,7 +99,7 @@ export default function Navbar() {
               className="btn btn-primary btn-sm btn-cv"
               href={CONTACT.cvUrl}
               download
-              aria-label="Baixar o CV em PDF"
+              aria-label="Download CV as PDF"
             >
               <DownloadIcon size={17} />
               <span>CV</span>
@@ -107,7 +107,7 @@ export default function Navbar() {
             <button
               className={`menu-btn${open ? " is-open" : ""}`}
               onClick={() => setOpen((v) => !v)}
-              aria-label={open ? "Fechar menu" : "Abrir menu"}
+              aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
             >
               <span />

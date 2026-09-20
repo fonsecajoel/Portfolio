@@ -40,7 +40,7 @@ export default function VideoModal({
           onClick={onClose}
           role="dialog"
           aria-modal="true"
-          aria-label="Vídeo de demonstração do Bora"
+          aria-label="Bora demo video"
         >
           <motion.div
             className="modal-card"
@@ -50,7 +50,7 @@ export default function VideoModal({
             transition={{ type: "spring", stiffness: 320, damping: 28 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <button className="modal-close" onClick={onClose} aria-label="Fechar vídeo">
+            <button className="modal-close" onClick={onClose} aria-label="Close video">
               <CloseIcon size={18} />
             </button>
             <video
@@ -61,7 +61,7 @@ export default function VideoModal({
               preload="metadata"
             />
             <p className="modal-hint">
-              Bora — demonstração da app de eventos e pontos de interesse em micro-mobilidade.
+              Bora — demo of the events and points-of-interest app for micro-mobility.
             </p>
           </motion.div>
         </motion.div>

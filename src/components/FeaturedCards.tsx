@@ -5,13 +5,13 @@ import { Reveal } from "./Reveal";
 import { CountUp } from "../hooks";
 import { ArrowRightIcon, CodeIcon, DownloadIcon, ExternalIcon, PlayIcon } from "./icons";
 
-/* ─────────────────────────── DoutorVida ─────────────────────────── */
+/* ─────────────────────── Company project ────────────────────────── */
 
-const DOUTOR_STATS = [
+const WORK_STATS = [
   { value: 6, suffix: "", label: "apps" },
   { value: 8, suffix: "", label: "packages" },
-  { value: 48, suffix: "+", label: "módulos" },
-  { value: 14, suffix: "+", label: "serviços" },
+  { value: 48, suffix: "+", label: "modules" },
+  { value: 14, suffix: "+", label: "services" },
 ];
 
 export function DoutorCard() {
@@ -20,20 +20,21 @@ export function DoutorCard() {
       <article className="feature-card">
         <div className="feature-body">
           <div className="feature-tags">
-            <span className="tag tag-pro">Em produção · DoutorVida</span>
+            <span className="tag tag-pro">Private · company project</span>
             <span className="tag">Monorepo</span>
-            <span className="tag">SaaS interno</span>
+            <span className="tag">Internal platform</span>
           </div>
 
-          <h3 className="feature-title">DoutorVida — Sistema Corporativo de Seguros &amp; Crédito</h3>
+          <h3 className="feature-title">Enterprise Insurance &amp; Credit Platform</h3>
           <p className="feature-desc">
-            O sistema que <strong>sustenta operações de seguros e crédito</strong> em escala: desenhado do zero
-            num monorepo TypeScript multi-app, com API NestJS, processos worker/eventos, backoffice React e
-            packages de domínio/API partilhados — e pipelines Docker de dev → staging → prod.
+            The platform behind <strong>insurance and credit operations</strong> at a company in Portugal.
+            I designed it end-to-end as a multi-app TypeScript monorepo — NestJS API, worker/event
+            processes, a React back office and shared domain/API packages — with Docker pipelines
+            from dev to staging to prod. <em>The code is private.</em>
           </p>
 
           <dl className="feature-stats">
-            {DOUTOR_STATS.map((s) => (
+            {WORK_STATS.map((s) => (
               <div key={s.label}>
                 <dt>
                   <CountUp value={s.value} suffix={s.suffix} />
@@ -43,31 +44,20 @@ export function DoutorCard() {
             ))}
           </dl>
 
-          <div className="feature-stack">
-            <span>NestJS</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Turborepo</span>
-            <span>Redis</span>
-            <span>Docker</span>
-            <span>GitHub Actions</span>
-            <span>Grafana</span>
-          </div>
-
           <ul className="feature-list">
-            <li>RBAC em 48+ módulos + auditoria</li>
-            <li>Pipeline OCR de documentos</li>
-            <li>CRM &amp; lifecycle de clientes</li>
-            <li>Backoffice usado diariamente</li>
+            <li>Role-based access control &amp; auditing</li>
+            <li>Document OCR pipeline</li>
+            <li>Customer CRM &amp; lifecycle</li>
+            <li>Back office used daily</li>
           </ul>
 
           <div className="feature-links">
             <a className="btn btn-ghost btn-sm" href={CONTACT.cvUrl} download>
               <DownloadIcon size={16} />
-              Detalhes no CV
+              Details in CV
             </a>
             <a className="link-arrow" href={`mailto:${CONTACT.email}`}>
-              Contacto
+              Contact
               <ArrowRightIcon size={16} />
             </a>
           </div>
@@ -81,7 +71,7 @@ export function DoutorCard() {
               <span />
             </div>
             <div className="mono-body">
-              <div className="mono-title">~/doutorvida · monorepo (Turborepo + pnpm)</div>
+              <div className="mono-title">~/platform · monorepo (Turborepo + pnpm)</div>
               <div className="mono-apps">
                 <div>
                   apps/<b>api</b>
@@ -169,14 +159,14 @@ export function BoraCard({ onPlay }: { onPlay: () => void }) {
                 <button
                   className="carousel-btn carousel-prev"
                   onClick={() => go(-1)}
-                  aria-label="Foto anterior"
+                  aria-label="Previous photo"
                 >
                   ‹
                 </button>
                 <button
                   className="carousel-btn carousel-next"
                   onClick={() => go(1)}
-                  aria-label="Próxima foto"
+                  aria-label="Next photo"
                 >
                   ›
                 </button>
@@ -191,7 +181,7 @@ export function BoraCard({ onPlay }: { onPlay: () => void }) {
                     setDir(i > index ? 1 : -1);
                     setIndex(i);
                   }}
-                  aria-label={`Foto ${i + 1}`}
+                  aria-label={`Photo ${i + 1}`}
                 />
               ))}
             </div>
@@ -200,38 +190,38 @@ export function BoraCard({ onPlay }: { onPlay: () => void }) {
 
         <div className="feature-body">
           <div className="feature-tags">
-            <span className="tag tag-personal">Projeto pessoal · app mobile</span>
+            <span className="tag tag-personal">Personal project · mobile app</span>
             <span className="tag">Concept</span>
-            <span className="tag">UI real</span>
+            <span className="tag">Real UI</span>
           </div>
 
           <h3 className="feature-title">
-            Bora — eventos &amp; pontos de interesse em micro-mobilidade
+            Bora — events &amp; points of interest in micro-mobility
           </h3>
           <p className="feature-desc">
-            Uma app <strong>mobile-first</strong> para descobrir <strong>eventos, cidades e histórias</strong>{" "}
-            à volta de pontos de interesse — com mapa social, páginas de evento e chat integrado.
-            <strong> Conceito completo desenhado e prototipado pela mão</strong>: identidade visual, fluxos e interação.
+            A <strong>mobile-first</strong> app to discover <strong>events, cities and stories</strong>{" "}
+            around points of interest — with a social map, event pages and built-in chat.
+            <strong> A complete concept designed and prototyped by hand</strong>: visual identity, flows and interaction.
           </p>
 
           <ul className="feature-list">
-            <li>Mapa social de pontos de interesse</li>
-            <li>Páginas de eventos &amp; agenda</li>
-            <li>Chat / conversas integradas</li>
-            <li>Histórias &amp; momentos</li>
+            <li>Social map of points of interest</li>
+            <li>Event pages &amp; schedule</li>
+            <li>Built-in chat / conversations</li>
+            <li>Stories &amp; moments</li>
           </ul>
 
           <div className="feature-stack">
             <span>Concept</span>
             <span>UI/UX</span>
-            <span>Protótipo</span>
-            <span>React Native (nativo)</span>
+            <span>Prototype</span>
+            <span>React Native (native)</span>
           </div>
 
           <div className="feature-links">
             <button className="btn btn-primary btn-sm" onClick={onPlay}>
               <PlayIcon size={16} />
-              Ver demo
+              Watch demo
             </button>
             <a
               className="link-arrow"
@@ -240,7 +230,7 @@ export function BoraCard({ onPlay }: { onPlay: () => void }) {
               rel="noreferrer"
             >
               <CodeIcon size={16} />
-              Repositório (privado)
+              Repository (private)
               <ExternalIcon size={14} />
             </a>
           </div>

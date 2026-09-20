@@ -53,7 +53,7 @@ function ProjectCard({ project }: { project: GitHubProject }) {
               Demo
             </a>
           ) : (
-            <span className="demo-none">Sem demo</span>
+            <span className="demo-none">No demo</span>
           )}
         </div>
       </div>
@@ -71,13 +71,13 @@ export default function Projects() {
     <section className="section section-alt" id="projetos">
       <div className="container">
         <SectionHead
-          eyebrow="// Projetos"
+          eyebrow="// Projects"
           title={
             <>
-              Trabalho em <em>produção</em> &amp; side projects
+              Work in <em>production</em> &amp; side projects
             </>
           }
-          sub="Os dois destaques mostram o lado profissional e o lado criativo; em baixo, tudo o que está no GitHub."
+          sub="The two highlights show the professional side and the creative side; below, everything that's on GitHub."
         />
 
         <div className="feature-grid">
@@ -86,7 +86,7 @@ export default function Projects() {
         </div>
 
         <div className="projects-wrap">
-          <div className="filter-bar" role="tablist" aria-label="Filtrar projetos">
+          <div className="filter-bar" role="tablist" aria-label="Filter projects">
             {FILTERS.map((f) => (
               <button
                 key={f.id}
@@ -100,7 +100,7 @@ export default function Projects() {
             ))}
             <Reveal className="filter-count" delay={0}>
               <span>
-                {filtered.length} {filtered.length === 1 ? "projeto" : "projetos"}
+                {filtered.length} {filtered.length === 1 ? "project" : "projects"}
               </span>
             </Reveal>
           </div>

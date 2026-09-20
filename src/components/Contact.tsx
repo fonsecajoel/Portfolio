@@ -4,8 +4,8 @@ import { GithubIcon, LinkedinIcon, MailIcon, MapPinIcon, PhoneIcon } from "./ico
 
 const CARDS = [
   { icon: MailIcon, label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
-  { icon: PhoneIcon, label: "Telefone", value: CONTACT.phone, href: `tel:${CONTACT.phoneHref}` },
-  { icon: MapPinIcon, label: "Localização", value: CONTACT.location, href: null },
+  { icon: PhoneIcon, label: "Phone", value: CONTACT.phone, href: `tel:${CONTACT.phoneHref}` },
+  { icon: MapPinIcon, label: "Location", value: CONTACT.location, href: null },
 ];
 
 export default function Contact() {
@@ -18,13 +18,13 @@ export default function Contact() {
             <div className="orb orb-b" />
 
             <div className="contact-head">
-              <span className="section-eyebrow">// Contacto</span>
+              <span className="section-eyebrow">// Contact</span>
               <h2 className="contact-title">
-                Onde me <em>encontras</em>
+                Where to <em>find me</em>
               </h2>
               <p className="contact-sub">
-                Obrigado por veres o meu trabalho — está tudo no GitHub e no CV em PDF.
-                Se quiseres falar comigo, envia um email.
+                Thanks for checking out my work — everything is on GitHub and in the PDF CV.
+                If you'd like to talk, just send an email.
               </p>
             </div>
 

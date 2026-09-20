@@ -7,13 +7,13 @@ export default function Experience() {
     <section className="section" id="experiencia">
       <div className="container">
         <SectionHead
-          eyebrow="// Experiência"
+          eyebrow="// Experience"
           title={
             <>
-              Onde já deixei <em>código em produção</em>
+              Where I've shipped <em>code in production</em>
             </>
           }
-          sub="Cinco anos de caminho: da operação e sistemas, ao desenho completo de plataformas empresariais."
+          sub="A five-year journey: from operations and systems to designing complete enterprise platforms."
         />
 
         <div className="timeline">

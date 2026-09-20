@@ -49,7 +49,7 @@ export default function App() {
           <motion.button
             className="to-top"
             onClick={scrollTop}
-            aria-label="Voltar ao topo"
+            aria-label="Back to top"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 16 }}

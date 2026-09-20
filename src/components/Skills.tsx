@@ -9,13 +9,13 @@ export default function Skills() {
     <section className="section section-alt" id="competencias">
       <div className="container">
         <SectionHead
-          eyebrow="// Competências"
+          eyebrow="// Skills"
           title={
             <>
-              Stack &amp; <em>práticas</em>
+              Stack &amp; <em>practices</em>
             </>
           }
-          sub="As ferramentas que uso para passar da ideia ao sistema em produção, com segurança e observabilidade."
+          sub="The tools I use to take an idea to a system in production, with security and observability."
         />
 
         <div className="skills-grid">
@@ -39,14 +39,14 @@ export default function Skills() {
             <div className="skill-card skill-card-cta">
               <div className="skill-head">
                 <span className="skill-dot" style={{ "--dot-c": "#22d3ee" } as CSSProperties} />
-                <h3>Tecnologia é meio, não fim</h3>
+                <h3>Technology is a means, not an end</h3>
               </div>
               <p>
-                Cada ferramenta aparece numa arquitetura porque resolve um problema real —
-                de requisitos, de operação ou de segurança.
+                Every tool in an architecture is there because it solves a real problem —
+                a requirement, an operation or a security one.
               </p>
               <button className="btn btn-primary" onClick={() => scrollToId("projetos")}>
-                Ver projetos reais
+                See real projects
                 <ArrowRightIcon size={16} />
               </button>
             </div>

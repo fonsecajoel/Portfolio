@@ -17,10 +17,10 @@ const WORDS = [
 ];
 
 const STATS = [
-  { value: 6, suffix: "", label: "apps no monorepo" },
-  { value: 48, suffix: "+", label: "módulos backend" },
-  { value: 2000, suffix: "+", label: "commits no GitHub" },
-  { value: 4, suffix: "+", label: "anos full-stack" },
+  { value: 6, suffix: "", label: "apps in the monorepo" },
+  { value: 48, suffix: "+", label: "backend modules" },
+  { value: 2000, suffix: "+", label: "commits on GitHub" },
+  { value: 4, suffix: "+", label: "years full-stack" },
 ];
 
 const TERM_LINES: Array<{ type: "cmd" | "out"; text: string; green?: boolean }> = [
@@ -29,7 +29,7 @@ const TERM_LINES: Array<{ type: "cmd" | "out"; text: string; green?: boolean }> 
   { type: "cmd", text: "ls ~/portfolio --meta" },
   { type: "out", text: "monorepo/  fullstack/  devops/  web3d/" },
   { type: "cmd", text: "cat about.md" },
-  { type: "out", text: "sistemas em produção desde 2022", green: true },
+  { type: "out", text: "systems in production since 2022", green: true },
 ];
 
 /* ── Janela de terminal Linux (escreve comandos em loop) ─────────── */
@@ -109,7 +109,7 @@ function HeroFileManager() {
           <i />
           <i />
         </span>
-        <span className="win-title">~/fotos — gestor de ficheiros</span>
+        <span className="win-title">~/photos — file manager</span>
       </div>
       <div className="fm-body">
         <div className="fm-photo">
@@ -132,7 +132,7 @@ function HeroTaskbar() {
     const id = setInterval(() => setNow(new Date()), 30000);
     return () => clearInterval(id);
   }, []);
-  const time = now.toLocaleTimeString("pt-PT", { hour: "2-digit", minute: "2-digit" });
+  const time = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
   return (
     <div className="hero-taskbar" aria-hidden="true">
@@ -185,7 +185,7 @@ export default function Hero() {
           >
             <span className="badge-pill">
               <span className="pulse-dot" />
-              Portfólio · Software Engineer
+              Portfolio · Software Engineer
             </span>
           </motion.div>
 
@@ -194,7 +194,7 @@ export default function Hero() {
             variants={{ hidden: { opacity: 0, y: 26 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } } }}
           >
             Software Engineer &amp;<br />
-            Arquiteto de <em>Sistemas</em>
+            Systems <em>Architect</em>
           </motion.h1>
 
           <motion.div
@@ -214,9 +214,9 @@ export default function Hero() {
             className="hero-lead"
             variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } } }}
           >
-            Construo <strong>plataformas full-stack</strong> que profissionais usam todos os dias —
-            do monorepo TypeScript multi-app com <strong>NestJS e React</strong>, até pipelines de{" "}
-            <strong>DevOps, CI/CD e observabilidade</strong> em contexto regulado.
+            I build <strong>full-stack platforms</strong> that professionals use every day —
+            from a multi-app TypeScript monorepo with <strong>NestJS and React</strong>, to{" "}
+            <strong>DevOps, CI/CD and observability</strong> pipelines in a regulated context.
           </motion.p>
 
           <motion.div
@@ -228,7 +228,7 @@ export default function Hero() {
               Download CV
             </a>
             <a href={`mailto:${CONTACT.email}`} className="btn btn-ghost btn-lg">
-              Contacto
+              Contact
               <ArrowRightIcon size={17} />
             </a>
             <a
@@ -306,11 +306,11 @@ export default function Hero() {
             </li>
             <li>
               <CheckIcon size={15} />
-              48+ módulos · 14+ serviços
+              48+ modules · 14+ services
             </li>
             <li>
               <CheckIcon size={15} />
-              15+ projetos públicos no GitHub
+              15+ public projects on GitHub
             </li>
           </ul>
         </motion.div>

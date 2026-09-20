@@ -3,11 +3,11 @@ import { scrollToId, scrollTop } from "../lib/scroll";
 import { GithubIcon, LinkedinIcon, MailIcon } from "./icons";
 
 const NAV = [
-  { id: "sobre", label: "Sobre" },
-  { id: "competencias", label: "Competências" },
-  { id: "experiencia", label: "Experiência" },
-  { id: "projetos", label: "Projetos" },
-  { id: "contacto", label: "Contacto" },
+  { id: "sobre", label: "About" },
+  { id: "competencias", label: "Skills" },
+  { id: "experiencia", label: "Experience" },
+  { id: "projetos", label: "Projects" },
+  { id: "contacto", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -30,11 +30,11 @@ export default function Footer() {
               </span>
             </a>
             <p>
-              Software Engineer &amp; DevOps · Sistemas completos em produção, do desenho ao deploy.
+              Software Engineer &amp; DevOps · Complete systems in production, from design to deploy.
             </p>
           </div>
 
-          <nav className="footer-nav" aria-label="Navegação rápida">
+          <nav className="footer-nav" aria-label="Quick navigation">
             {NAV.map((l) => (
               <button key={l.id} onClick={() => scrollToId(l.id)}>
                 {l.label}
@@ -61,7 +61,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} Joel Fonseca — feito à mão com <span className="heart">♥</span> e React
+            © {new Date().getFullYear()} Joel Fonseca — handcrafted with <span className="heart">♥</span> and React
           </span>
           <span>React · Vite · Framer Motion · Lenis</span>
         </div>

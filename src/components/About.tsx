@@ -4,18 +4,18 @@ import { CodeIcon, LayersIcon, ShieldIcon } from "./icons";
 const PILLARS = [
   {
     icon: LayersIcon,
-    title: "Arquitetura & Sistema",
-    text: "Monorepos TypeScript multi-app com packages partilhados, boundaries claras e Domain-Driven Design à escala.",
+    title: "Architecture & System",
+    text: "Multi-app TypeScript monorepos with shared packages, clear boundaries and Domain-Driven Design at scale.",
   },
   {
     icon: CodeIcon,
     title: "Full-Stack",
-    text: "APIs NestJS, workers e backoffice React que equipas usam todos os dias — do schema até ao deploy.",
+    text: "NestJS APIs, workers and React backoffices that teams use every day — from schema to deploy.",
   },
   {
     icon: ShieldIcon,
-    title: "Segurança & Fiabilidade",
-    text: "RBAC, JWT, auditoria e pipelines de CI/CD em contexto regulado, com observabilidade desde o dia um.",
+    title: "Security & Reliability",
+    text: "RBAC, JWT, auditing and CI/CD pipelines in a regulated context, with observability from day one.",
   },
 ];
 
@@ -24,38 +24,38 @@ export default function About() {
     <section className="section" id="sobre">
       <div className="container">
         <SectionHead
-          eyebrow="// Sobre mim"
+          eyebrow="// About me"
           title={
             <>
-              De técnico a <em>arquiteto</em> de plataformas
+              From technician to platform <em>architect</em>
             </>
           }
-          sub="O que começa como curiosidade por sistemas acaba em plataformas empresariais usadas todos os dias."
+          sub="What starts as curiosity about systems ends up as enterprise platforms used every day."
         />
 
         <div className="sobre-grid">
           <Reveal>
             <div className="sobre-text">
               <p>
-                Hoje desenho e entrego o <strong>sistema completo de seguros e crédito</strong> da DoutorVida —
-                um monorepo TypeScript com <strong>6 apps</strong>: API NestJS, processos worker/eventos, backoffice React
-                e <strong>8 packages de domínio e API partilhados</strong>, com <strong>48+ módulos</strong> e múltiplos serviços Docker.
+                Today I design and deliver the <strong>insurance and credit platform</strong> behind a company in
+                Portugal — a multi-app TypeScript monorepo with a NestJS API, worker/event processes,
+                a React back office and shared domain/API packages, all running in production.
               </p>
               <p>
-                Antes do backend, fui <strong>técnico de sistemas</strong> na Fractalia (resolução de incidentes e redes à escala empresarial).
-                Essa base em infraestrutura é o que dá uma visão de ponta a ponta: desenho pensado para deploy,
-                dados, segurança e operação — não só para código que compila.
+                Before the backend, I was a <strong>computer technician</strong> at Fractalia (incident resolution and networks
+                at enterprise scale). That infrastructure background is what gives me end-to-end vision: design made
+                for deploy, data, security and operations — not just for code that compiles.
               </p>
               <p>
-                Em paralelo, construo e entreguei mais de <strong>15 projetos</strong> (alguns em produção) que podes
-                explorar em baixo — de <strong>e-commerce a gestão clínica</strong>, de <strong>landing pages Astro</strong> a
-                experiências <strong>3D com Three.js</strong>.
+                In parallel, I've built and delivered more than <strong>15 projects</strong> (some in production) that you can
+                explore below — from <strong>e-commerce to clinic management</strong>, from <strong>Astro landing pages</strong> to
+                <strong> 3D experiences with Three.js</strong>.
               </p>
               <div className="sobre-tags">
                 <span>Leiria · Portugal</span>
                 <span>PT / EN</span>
-                <span>5+ anos na área</span>
-                <span>15+ projetos</span>
+                <span>5+ years in the field</span>
+                <span>15+ projects</span>
               </div>
             </div>
           </Reveal>
