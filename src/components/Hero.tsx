@@ -28,8 +28,8 @@ const TERM_LINES: Array<{ type: "cmd" | "out"; text: string; green?: boolean }> 
   { type: "out", text: "joel fonseca · software engineer" },
   { type: "cmd", text: "ls ~/portfolio --meta" },
   { type: "out", text: "monorepo/  fullstack/  devops/  web3d/" },
-  { type: "cmd", text: "cat status.txt" },
-  { type: "out", text: "systems online — open to work", green: true },
+  { type: "cmd", text: "cat about.md" },
+  { type: "out", text: "sistemas em produção desde 2022", green: true },
 ];
 
 /* ── Janela de terminal Linux (escreve comandos em loop) ─────────── */
@@ -185,7 +185,7 @@ export default function Hero() {
           >
             <span className="badge-pill">
               <span className="pulse-dot" />
-              Disponível para novos projetos
+              Portfólio · Software Engineer
             </span>
           </motion.div>
 
@@ -228,7 +228,7 @@ export default function Hero() {
               Download CV
             </a>
             <a href={`mailto:${CONTACT.email}`} className="btn btn-ghost btn-lg">
-              Fala comigo
+              Contacto
               <ArrowRightIcon size={17} />
             </a>
             <a
@@ -302,15 +302,15 @@ export default function Hero() {
           <ul className="hero-quicklist">
             <li>
               <CheckIcon size={15} />
-              UI: 3D em tempo real (Three.js)
+              Monorepo: 6 apps · 8 packages
             </li>
             <li>
               <CheckIcon size={15} />
-              Janelas Glass + terminal ao vivo
+              48+ módulos · 14+ serviços
             </li>
             <li>
               <CheckIcon size={15} />
-              Parallax com o rato
+              15+ projetos públicos no GitHub
             </li>
           </ul>
         </motion.div>

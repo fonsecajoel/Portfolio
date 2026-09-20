@@ -54,8 +54,8 @@ export default function About() {
               <div className="sobre-tags">
                 <span>Leiria · Portugal</span>
                 <span>PT / EN</span>
-                <span>Remote-friendly</span>
-                <span>Full-time &amp; Freelance</span>
+                <span>5+ anos na área</span>
+                <span>15+ projetos</span>
               </div>
             </div>
           </Reveal>

@@ -20,11 +20,11 @@ export default function Contact() {
             <div className="contact-head">
               <span className="section-eyebrow">// Contacto</span>
               <h2 className="contact-title">
-                Vamos <em>construir algo</em> juntos?
+                Onde me <em>encontras</em>
               </h2>
               <p className="contact-sub">
-                Tenho o portefólio completo no GitHub, o CV em PDF e a caixa de email sempre aberta.
-                Resposta em menos de 24h.
+                Obrigado por veres o meu trabalho — está tudo no GitHub e no CV em PDF.
+                Se quiseres falar comigo, envia um email.
               </p>
             </div>
 

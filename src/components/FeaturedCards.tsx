@@ -67,7 +67,7 @@ export function DoutorCard() {
               Detalhes no CV
             </a>
             <a className="link-arrow" href={`mailto:${CONTACT.email}`}>
-              Fala comigo
+              Contacto
               <ArrowRightIcon size={16} />
             </a>
           </div>
