@@ -735,32 +735,6 @@ em { font-style: normal; background: var(--grad-text); -webkit-background-clip: 
 .project-actions .demo-link:hover { color: var(--c-primary-2); }
 .project-actions .demo-none { font-size: 0.8rem; font-weight: 600; color: var(--c-faint); font-style: italic; }
 
-/* ─── Formação ──────────────────────────────────────────────── */
-.edu-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 18px; margin-bottom: 8px; }
-.edu-card {
-  padding: 26px; border-radius: var(--radius);
-  background: var(--c-surface); border: 1px solid var(--c-border);
-  transition: transform 0.25s var(--ease), border-color 0.25s var(--ease);
-}
-.edu-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--c-primary) 50%, transparent); }
-.edu-card-uni { background: linear-gradient(135deg, color-mix(in srgb, var(--c-primary) 14%, var(--c-surface)), var(--c-surface)); border-color: color-mix(in srgb, var(--c-primary) 35%, transparent); }
-.edu-card h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
-.edu-card p { font-size: 0.9rem; color: var(--c-text-soft); }
-.edu-meta { display: inline-block; margin-top: 10px; font-family: var(--font-mono); font-size: 0.74rem; color: var(--c-primary); }
-
-.certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.cert-card {
-  padding: 22px; border-radius: var(--radius);
-  background: var(--c-surface); border: 1px solid var(--c-border);
-  display: flex; flex-direction: column; gap: 6px;
-  transition: transform 0.25s var(--ease), border-color 0.25s var(--ease);
-}
-.cert-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--c-success) 50%, transparent); }
-.cert-org { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c-primary); }
-.cert-card h4 { font-size: 1rem; font-weight: 700; line-height: 1.35; }
-.cert-date { font-size: 0.78rem; color: var(--c-muted); }
-.sub-block-title { font-size: 1.15rem; font-weight: 700; margin: 52px 0 22px; color: var(--c-text); }
-
 /* ─── Contacto ───────────────────────────────────────────────── */
 .section-contact { background: var(--c-bg); }
 .contact-panel {
@@ -892,8 +866,6 @@ a.contact-card:hover { transform: translateY(-5px); border-color: var(--c-primar
   .feature-body { padding: 26px 22px; }
   .mono-card { margin: 0 22px 26px; }
   .projects-grid { grid-template-columns: 1fr; }
-  .certs-grid { grid-template-columns: 1fr; }
-  .edu-grid { grid-template-columns: 1fr; }
   .contact-panel { padding: 46px 22px; }
   .footer-inner { grid-template-columns: 1fr; gap: 30px; }
   .hero { padding-top: calc(var(--header-h) + 36px); }

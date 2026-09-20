@@ -264,20 +264,6 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
 ];
 
-export interface Cert {
-  org: string;
-  title: string;
-  date: string;
-}
-
-export const CERTS: Cert[] = [
-  { org: "Harvard University", title: "CS50 — Introdução à Cybersecurity", date: "Jul 2025" },
-  { org: "Harvard University", title: "CS50 — Introdução à IA com Python", date: "Mai 2024" },
-  { org: "Harvard University", title: "CS50 — Introdução à Ciência da Computação", date: "Jan 2023" },
-  { org: "Bootcamp online", title: "The Web Developer Bootcamp", date: "2024" },
-  { org: "Udemy", title: "RPA com UiPath & SQL Server", date: "Jan 2024" },
-];
-
 export const MARQUEE_ITEMS = [
   "TypeScript", "NestJS", "React", "Next.js", "React Native", "Expo",
   "Node.js", "PostgreSQL", "Redis", "Prisma", "Supabase", "Docker",
